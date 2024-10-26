@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Quanlybenhvien
 {
-    public partial class form1 : Form
+    public partial class Form1 : Form
     {
-        public form1()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -54,13 +55,7 @@ namespace Quanlybenhvien
             frm0.MdiParent = this;
             frm0.Show();
 
-            DialogResult hoi;
-            hoi=  MessageBox.Show("BẠN MUỐN TRUY CẬP! ", "thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if(hoi==DialogResult.No)
-            {
-                frm0.Close();
-            }
-            
+           
 
 
         }
@@ -70,13 +65,6 @@ namespace Quanlybenhvien
             Hồ_sơ_Bệnh_án frm1 = new Hồ_sơ_Bệnh_án();
             frm1.MdiParent = this;
             frm1.Show();
-
-            DialogResult hoi;
-            hoi = MessageBox.Show("BẠN MUỐN TRUY CẬP! ", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (hoi == DialogResult.No)
-            {
-                frm1.Close();
-            }
 
         }
 
@@ -92,9 +80,6 @@ namespace Quanlybenhvien
 
         private void đĂNGKÝToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            formdangky frmdangky = new formdangky();
-            frmdangky.MdiParent = this;
-            frmdangky.Show();
         
         }
 
@@ -110,12 +95,7 @@ namespace Quanlybenhvien
             khoanoi frmkhoanoi = new khoanoi();
             frmkhoanoi.MdiParent = this;
             frmkhoanoi.Show();
-            DialogResult hoi;
-            hoi = MessageBox.Show("BẠN MUỐN TRUY CẬP! ", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (hoi == DialogResult.No)
-            {
-                frmkhoanoi.Close();
-            }
+           
 
         }
 
@@ -124,12 +104,7 @@ namespace Quanlybenhvien
             khoangoai frmkhoangoai = new khoangoai();
             frmkhoangoai.MdiParent = this;
             frmkhoangoai.Show();
-            DialogResult hoi;
-            hoi = MessageBox.Show("BẠN MUỐN TRUY CẬP! ", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (hoi == DialogResult.No)
-            {
-                frmkhoangoai.Close();
-            }
+           
         }
 
         private void bácSỹToolStripMenuItem_Click(object sender, EventArgs e)
@@ -137,42 +112,18 @@ namespace Quanlybenhvien
             bacsi frmbacsi = new bacsi();
             frmbacsi.MdiParent = this;
             frmbacsi.Show();
-            DialogResult hoi;
-            hoi = MessageBox.Show("BẠN MUỐN XEM THÔNG TIN BÁC SỸ! ", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (hoi == DialogResult.No)
-            {
-                frmbacsi.Close();
-            }
+            
 
         }
 
     
         private void pHÒNGKHÁMTAIMŨIHỌNGToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            phongkhambenh frmphongkham = new phongkhambenh();
-            frmphongkham.MdiParent = this;
-            frmphongkham.Show();
-            DialogResult hoi;
-            hoi = MessageBox.Show("BẠN MUỐN TRUY CẬP! ", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (hoi == DialogResult.No)
-            {
-                frmphongkham.Close();
-            }
+            
+           
         }
 
-        private void pHÒNGKHÁMXÉTNGHIỆMToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            phongkhamxetnghiem frmphongxetnghiem = new phongkhamxetnghiem();
-            frmphongxetnghiem.MdiParent = this;
-            frmphongxetnghiem.Show();
-            DialogResult hoi;
-            hoi = MessageBox.Show("BẠN MUỐN TRUY CẬP! ", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (hoi == DialogResult.No)
-            {
-                frmphongxetnghiem.Close();
-            }
-        }
-
+       
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -180,9 +131,7 @@ namespace Quanlybenhvien
 
         private void frmdannhap_Click(object sender, EventArgs e)
         {
-            dangnhap frm1 = new dangnhap();
-            frm1.MdiParent = this;
-            frm1.Show();
+           
            
         }
 
@@ -198,9 +147,7 @@ namespace Quanlybenhvien
 
         private void đĂNGKÝToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            formdangky frm1 = new formdangky();
-            frm1.MdiParent = this;
-            frm1.Show();
+          
         }
 
         private void nHÂNVIÊNToolStripMenuItem_Click(object sender, EventArgs e)
@@ -208,12 +155,7 @@ namespace Quanlybenhvien
             nhanvien frmnhanvien = new nhanvien();
             frmnhanvien.MdiParent = this;
             frmnhanvien.Show();
-            DialogResult hoi;
-            hoi = MessageBox.Show("BẠN MUỐN TRUY CẬP! ", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (hoi == DialogResult.No)
-            {
-                frmnhanvien.Close();
-            }
+           
 
         }
 
@@ -238,6 +180,88 @@ namespace Quanlybenhvien
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phòngBệnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            phongkhambenh frmphongkham = new phongkhambenh();
+            frmphongkham.MdiParent = this;
+            frmphongkham.Show();
+        }
+
+        private void đĂNGXUẤTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đĂNGXUẤTToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            string message = "BẠN MUỐN ĐĂNG XUẤT KHỎI HỆ THỐNG!";
+            string title = "ĐÓNG";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                dangnhap dn = new dangnhap();
+                dn.ShowDialog();
+            }
+            else
+            {
+
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void aBOUTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tHÔNGTINDỰÁNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            thongtinduan frmthongtin = new thongtinduan();
+            frmthongtin.MdiParent = this;
+            frmthongtin.Show();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
